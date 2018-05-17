@@ -43,15 +43,12 @@ For example, to show a toast notification with [ember-cli-notifications](https:/
 //application/route.js
 export default Route.extend({
     versionUpdate: service(),
-    fastboot: service(),
     notifications: service('notification-messages')
 
     afterModel() {
         this._super(...arguments);
         get(this, 'versionUpdate').on('versionChanged', this, () => {
-            if(!get(this, 'fastboot.isFastBoot')) {
-                get(this, 'notifications').warning('A new version is available! Woohoo!');
-            }
+            get(this, 'notifications').warning('A new version is available! Woohoo!');
         })
     }
 });

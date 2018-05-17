@@ -33,7 +33,9 @@ export default Service.extend(Evented, {
         if(get(this, 'upgradeAvailable') && isNone(get(this, 'autoRefreshTimer')) && !get(this, 'autoRefreshCanceled')) {
             this.scheduleAppRefresh();
             //also trigger an event when a the app version changes
-            this.trigger('versionChanged', get(this, 'latestAppVersion'));
+            if(!get(this, 'fastboot.isFastBoot')) {
+                this.trigger('versionChanged', get(this, 'latestAppVersion'));
+            }
         }
     }),
 
