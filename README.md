@@ -1,7 +1,7 @@
 gavant-ember-app-version-update
 ==============================================================================
 
-[Short description of the addon.]
+Notifies users when a new app version is available, and automatically reloads the application.
 
 Installation
 ------------------------------------------------------------------------------
