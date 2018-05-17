@@ -49,7 +49,9 @@ export default Route.extend({
     afterModel() {
         this._super(...arguments);
         get(this, 'versionUpdate').on('versionChanged', this, () => {
-            get(this, 'notifications').warning('A new version is available! Woohoo!');
+            if(!get(this, 'fastboot.isFastBoot')) {
+                get(this, 'notifications').warning('A new version is available! Woohoo!');
+            }
         })
     }
 });
@@ -113,6 +115,10 @@ export default Authenticator.extend({
     }
 });
 ```
+
+### Testing in development
+
+By default, the addon will not trigger the version update logic if the `ENV.versionUpdate.version` config's "BUILD_VERSION" placeholder value has not been replaced with a real version value. Since this normally only happens on a non-dev environment, to test the addon in dev you will just need to temporarily manually edit this value in `environment.js` to something other than "BUILD_VERSION".
 
 Contributing
 ------------------------------------------------------------------------------
