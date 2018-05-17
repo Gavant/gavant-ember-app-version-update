@@ -1,17 +1,16 @@
 {
   "name": "gavant-ember-app-version-update",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.0.1",
+  "description": "Notifies users when a new app version is available, and automatically reloads the application.",
+  "author": "Gavant Software, Inc.",
+  "repository": "https://github.com/Gavant/gavant-ember-app-version-update",
   "keywords": [
     "ember-addon"
   ],
-  "license": "MIT",
-  "author": "",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
   "scripts": {
     "build": "ember build",
     "lint:js": "eslint ./*.js addon addon-test-support app blueprints config lib server test-support tests",
