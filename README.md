@@ -73,7 +73,7 @@ Additionally, the service exposes several convenience methods and properties tha
 Almost all apps will need to do this, in order to trigger version updates when a new version is received via AJAX responses from your API. To do so, simply use the `DataAdapterMixin` in your application/adapter, and ajax service:
 
 ```js
-import DataAdapterMixin from 'gavant-ember-app-version-update/mixins/data-adapter-mixin';
+import DataAdapterMixin from '@gavant/ember-app-version-update/mixins/data-adapter-mixin';
 ```
 
 ### Integrating with gavant-ember-websockets
@@ -83,7 +83,7 @@ If your app has websockets support with [gavant-ember-websockets](https://github
 ```js
 //application/route.js
 import Route from '@ember/routing/route';
-import SocketEventMixin from 'gavant-ember-app-version-update/mixins/socket-event-mixin';
+import SocketEventMixin from '@gavant/ember-app-version-update/mixins/socket-event-mixin';
 
 export default Route.extend(SocketEventMixin, {
     //...
