@@ -1,5 +1,5 @@
 {
-  "name": "gavant-ember-app-version-update",
+  "name": "@gavant/ember-app-version-update",
   "version": "0.0.1",
   "description": "Notifies users when a new app version is available, and automatically reloads the application.",
   "author": "Gavant Software, Inc.",

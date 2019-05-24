@@ -7,7 +7,7 @@ Installation
 ------------------------------------------------------------------------------
 
 ```
-ember install gavant-ember-app-version-update
+ember install @gavant/ember-app-version-update
 ```
 
 Add the settings below (shown with default values) to your app's config/environment.js to configure the addon. At the very least, you **must** set the `versionUpdate.version` value to a string of `"BUILD_VERSION"`. This is required, as it is a placeholder that is replaced during deployment with the application's actual current version number.
