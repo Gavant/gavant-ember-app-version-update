@@ -1,6 +1,6 @@
 {
   "name": "@gavant/ember-app-version-update",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Notifies users when a new app version is available, and automatically reloads the application.",
   "author": "Gavant Software, Inc.",
   "repository": "https://github.com/Gavant/gavant-ember-app-version-update",
