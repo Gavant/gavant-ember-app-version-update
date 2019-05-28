@@ -1,5 +1,5 @@
 import EmberObject from '@ember/object';
-import DataAdapterMixinMixin from 'gavant-ember-app-version-update/mixins/data-adapter-mixin';
+import DataAdapterMixinMixin from '@gavant/ember-app-version-update/mixins/data-adapter-mixin';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | data-adapter-mixin', function() {
