@@ -3,6 +3,15 @@ gavant-ember-app-version-update
 
 Notifies users when a new app version is available, and automatically reloads the application.
 
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.12 or above
+* Ember CLI v2.13 or above
+* Node.js v10 or above
+
+
 Installation
 ------------------------------------------------------------------------------
 
@@ -120,29 +129,8 @@ By default, the addon will not trigger the version update logic if the `ENV.vers
 Contributing
 ------------------------------------------------------------------------------
 
-### Installation
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
-* `git clone <repository-url>`
-* `cd gavant-ember-app-version-update`
-* `yarn install`
-
-### Linting
-
-* `yarn lint:js`
-* `yarn lint:js --fix`
-
-### Running tests
-
-* `ember test` – Runs the test suite on the current Ember version
-* `ember test --server` – Runs the test suite in "watch mode"
-* `ember try:each` – Runs the test suite against multiple Ember versions
-
-### Running the dummy application
-
-* `ember serve`
-* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
 License
 ------------------------------------------------------------------------------
